@@ -25,7 +25,7 @@ SECRET_KEY = '(&g+@30*3b1joyf)ybg6_2%chg@@t7&=t2%q5gettmzwoxn_d@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["lovefwb.herokuapp.com"]
 
 
 # Application definition
