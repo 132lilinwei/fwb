@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% load static %}
+<img src="{% static "website/heart.jpg" %}" style="position:absolute; left:10px; top:70px" alt="My image"/>
+<div class="myblink">老婆我爱你，快来拿走我的爱。么么哒。</div>
+<a style="position: absolute; left: 300px; top: 350px;" class="btn myButton" onclick="myFunction()">接受我的爱</a>
+<a class="btn myButton"style="position: absolute; left: 500px; top: 350px;"onclick="myFunction2()">哼，不要</a>
+
+<link rel="stylesheet" type="text/css" href="{% static 'website/style.css' %}" />
+
+<script>
+    function myFunction() {
+        alert("最爱你啦，么么哒！！！");
+
+
+    }
+    var i=0;
+    function myFunction2() {
+        if (i===0){
+            alert("给你买巧克力");
+        }
+        if (i===1){
+            alert("给你买零食");
+
+        }
+        if (i===2){
+            alert("给你一个亲亲");
+        }
+        if (i===3){
+            alert("给你好多亲亲");
+        }
+        if (i===4){
+            alert("给你一个抱抱");
+        }
+        if (i===5){
+            alert("哼唧，略略略，不哄你啦");
+        }
+        if (i===6){
+            alert("好嘛好嘛，送你一个口红");
+        }
+        if (i===7){
+            alert("送你一个粉底");
+        }
+        if (i===8){
+            alert("老婆别生气了，后面真的没有了，点左边的按钮吧");
+        }
+        if (i>=9){
+            var o=i+1;
+            alert("老婆点这个按钮"+o.toString()+"次了。老婆别生气了，后面真的没有了，点左边的按钮吧");
+        }
+        i++;
+
+
+    }
+</script>
+
+</body>
+
+</html>
