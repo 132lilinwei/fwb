@@ -1,1 +1,1 @@
-web: gunicorn newsite.wsgi
+web: gunicorn fwb.wsgi
